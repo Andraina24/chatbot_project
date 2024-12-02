@@ -1,0 +1,21 @@
+<!-- chatbot/templates/chatbot/chat.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Simple</title>
+</head>
+<body>
+    <h1>Chatbot Simple</h1>
+
+    <form method="GET">
+        <label for="message">Votre message :</label>
+        <input type="text" name="message" id="message" value="{{ user_input }}">
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <h2>Réponse du chatbot :</h2>
+    <p>{{ response }}</p>
+</body>
+</html>
